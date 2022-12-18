@@ -6,4 +6,5 @@ other version
 - https://github.com/SilvVF/SupabaseRealtimeChatSample kotlin / native android
 - https://github.com/SilvVF/SupabaseRealtimeChatSwift swift / native IOS
 
-![Screenshot_20221218-024252](https://user-images.githubusercontent.com/98186105/208287069-1ae3ccb6-09bb-4eca-9cfe-0a4831c19ae7.png)
+
+![Screenshot_20221218-024252 (1)](https://user-images.githubusercontent.com/98186105/208287164-db4f4622-7d3c-4170-83d4-08ba3a3a3da6.png)
