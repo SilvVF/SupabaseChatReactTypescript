@@ -9,4 +9,6 @@ type IMessage = {
 type OMessage = {
     content: string
     sender: string
+
+    color: number
 }

@@ -11,8 +11,8 @@ export const MessageItem = ({message: {color, sender, ...rest}}: MessageProps) =
             case 1: return  "#00bfff"
             case 2: return  "#7cfc00"
             case 3: return  "#ff00ff"
-            case 5: return  "#00ffff"
-            case 6: return  "#ffff00"
+            case 4: return  "#00ffff"
+            case 5: return  "#ffff00"
             default: return "#ff0000"
         }
     }

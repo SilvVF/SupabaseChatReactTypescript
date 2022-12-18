@@ -25,16 +25,20 @@ export default function App() {
   return (
     <View style={styles.container}>
         <SafeAreaProvider>
-          <ChatScreen />
+          <ChatScreen chatColor={(Math.floor(Math.random() * 8))}/>
           <StatusBar style="auto" />
         </SafeAreaProvider>
     </View>
   );
 }
 
-const ChatScreen = () => {
+type ChatProps = {
+    chatColor: number
+}
+const ChatScreen = ({chatColor}: ChatProps) => {
 
     const insets = useSafeAreaInsets()
+
 
     const [userMessage, setUserMessage] = useState("")
     const [userName, setUserName] = useState("")
@@ -50,7 +54,8 @@ const ChatScreen = () => {
     function sendMessageHandler() {
         const message: OMessage = {
             content: userMessage,
-            sender: userName
+            sender: userName,
+            color: chatColor
         }
         sendMessage(message)
             .catch(error => console.log(error))
